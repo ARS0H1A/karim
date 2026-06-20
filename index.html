@@ -5661,7 +5661,57 @@
                 <button class="btn-secondary btn-xs" onclick="filterShop('special')" id="filter-special">✨ Special</button>
             </div>
 
-            <div id="shopProducts" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;"></div>
+            <div id="shopProducts" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
+                <div class="glass shop-product" data-cat="skin" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">🐍</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Snake Skin</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">Green snake pattern</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 50</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(1)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="boost" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">🧠</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Memory Boost</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">+5 Memory levels</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 30</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(2)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="special" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">👑</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Golden Avatar</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">Exclusive golden avatar</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 100</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(3)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="boost" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">💎</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Mega Points</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">+1000 points instantly</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 200</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(4)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="skin" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">🌙</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Dark Theme</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">Night mode for site</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 75</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(5)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="boost" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">🚀</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Speed Boost</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">Faster snake speed</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 40</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(6)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="special" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">🌈</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Rainbow Avatar</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">Colorful avatar</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 150</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(7)">Add to Cart</button>
+                </div><div class="glass shop-product" data-cat="game" style="padding:1.2rem; text-align:center; transition:all 0.3s;">
+                    <div style="font-size:3rem; margin-bottom:0.3rem;">❤️</div>
+                    <div style="font-weight:600; font-size:0.95rem;">Extra Lives</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin:0.2rem 0;">+3 lives in games</div>
+                    <div style="font-size:0.8rem; color:var(--gold); font-weight:600;">🪙 25</div>
+                    <button class="btn-primary btn-sm" style="margin-top:0.5rem; width:100%;" onclick="Shop.addToCart(8)">Add to Cart</button>
+                </div>
+            </div>
 
             <div class="modal-overlay" id="cartModal">
                 <div class="modal-box" style="max-width:500px;">
@@ -5807,7 +5857,13 @@ const Shop = {
             btn.style.background = 'var(--accent)';
             btn.style.color = '#0b1010';
         }
-        this.renderProducts();
+        document.querySelectorAll('.shop-product').forEach(card => {
+            if (category === 'all' || card.dataset.cat === category) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
     }
 };
 
