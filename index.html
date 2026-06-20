@@ -1712,6 +1712,7 @@
                 data-i18n="nav_admin"><i class="fas fa-cogs"></i></a>
             <a data-view="console" onclick="setView('console')" id="nav-console" style="display:none;"
                 data-i18n="nav_console"><i class="fas fa-terminal"></i></a>
+            <a data-view="shop" onclick="setView('shop')" data-i18n="nav_shop"><i class="fas fa-store"></i> Shop</a>
         </nav>
 
         <div class="auth-area" id="authArea"></div>
@@ -5822,21 +5823,6 @@ function closeCart() {
 
 function filterShop(category) { Shop.filter(category); }
 
-// Add shop link to nav (FIXED: uses window.setView to avoid const reassign error)
-document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.getElementById('navLinks');
-    if (nav) {
-        const shopLink = document.createElement('a');
-        shopLink.dataset.view = 'shop';
-        shopLink.onclick = function() {
-            if (typeof setView === 'function') setView('shop');
-            Shop.updateUI();
-        };
-        shopLink.textContent = '🛒 Shop';
-        shopLink.style.cssText = 'padding:0.3rem 0.7rem;border-radius:30px;font-size:0.75rem;font-weight:500;color:var(--text-secondary);text-decoration:none;transition:all 0.35s;cursor:pointer;';
-        nav.appendChild(shopLink);
-    }
-});
 
 console.log('🛒 Shop system loaded!');
 
